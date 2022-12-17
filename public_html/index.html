@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Student Enrollment Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h2 style="text-align: center">Student Enrollment Form</h2>
+        <div class="row justify-content-md-center">
+            <form id="enrollForm" method="get">
+
+                <label for="rollNoField">Roll No</label>
+                <input type="text" class="form-control" id="rollNoField" placeholder="Enter Roll No." onchange="getStudent()"> 
+                <br/>
+                <label for="fullNameField">Full Name</label>
+                <input type="text" class="form-control" id="fullNameField" placeholder="Enter Full Name">
+                <br/>
+                <label for="classField">Class</label>
+                <input type="text" class="form-control" id="classField" placeholder="Enter Class">
+                <br/>
+                <label for="birthField">Birth Date</label>
+                <input type="date" class="form-control" id="birthField">
+                <br/>
+                <label for="addressField">Address</label>
+                <textarea class="form-control" id="addressField" rows="3" cols="50" placeholder="Enter Address"></textarea>
+                <br/>
+                <label for="enrollField">Enrollment Date</label>
+                <input type="date" class="form-control" id="enrollField">
+                <br/>
+                <button type="button" id="save" class="btn btn-warning" onclick="saveForm()" disabled>Save</button>
+                <button type="button" id="update" class="btn btn-primary" onclick="updateForm()" disabled>Update</button>
+                <button type="button" id="reset" class="btn btn-danger" onclick="resetForm()" disabled>Reset</button>
+
+            </form>
+        </div>
+        <script type="text/javascript" src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
